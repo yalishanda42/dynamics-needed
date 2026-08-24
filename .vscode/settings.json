@@ -9,12 +9,11 @@
   // Изходната папка (както в build.sh). %DIR% = папката на root файла.
   "latex-workshop.latex.outDir": "%DIR%/build",
 
-  // Инструмент: Tectonic. Абсолютен път, защото стартиран от Dock,
-  // VS Code често няма ~/homebrew/bin в PATH. Смени пътя при нужда.
+  // Инструмент: Tectonic. Разчитаме tectonic да е в PATH.
   "latex-workshop.latex.tools": [
     {
       "name": "tectonic",
-      "command": "/Users/aleksandar.ignatov/homebrew/bin/tectonic",
+      "command": "tectonic",
       "args": [
         "-X", "compile",
         "%DOC%.tex",
